@@ -8,5 +8,14 @@
   "observability": {
     "enabled": true,
     "traces": { "enabled": true }
-  }
+  },
+  // Non-secret config. Secrets are set with `wrangler secret put` and never committed.
+  "vars": {
+    "LANGFUSE_BASE_URL": "https://us.cloud.langfuse.com",
+    "PC_BRIDGE_URL": "https://pc.jugginai.net",
+    "PINECONE_INDEX": "jugginai-rag"
+  },
+  "r2_buckets": [
+    { "binding": "RAG_BUCKET", "bucket_name": "jugginai" }
+  ]
 }
