@@ -1,0 +1,6 @@
+# Local only. Set production values with: wrangler secret put <NAME>
+# Never commit real values.
+AI_PROXY_TOKEN=
+OPENAI_API_KEY=
+XAI_API_KEY=
+CF_AIG_AUTHORIZATION=
